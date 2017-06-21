@@ -6,7 +6,7 @@ AI version of the puzzle(5*5) game. [Play it](https://stevennl.github.io/Puzzle)
 
 ![](img/demo.gif)
 
-## Reference
+## Credits
 
 - [TastyLib](https://github.com/stevennl/TastyLib)
 
