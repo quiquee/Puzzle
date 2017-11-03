@@ -1,6 +1,6 @@
 # Puzzle
 
-AI version of the puzzle(5*5) game. [Play it](https://stevennl.github.io/Puzzle) in your browser!
+AI version of the puzzle(5*5) game. [Play it](https://chuyangliu.github.io/Puzzle) in your browser!
 
 ## Demo
 
@@ -8,7 +8,7 @@ AI version of the puzzle(5*5) game. [Play it](https://stevennl.github.io/Puzzle)
 
 ## Credits
 
-- [TastyLib](https://github.com/stevennl/TastyLib)
+- [TastyLib](https://github.com/chuyangliu/TastyLib)
 
 ## License
 
