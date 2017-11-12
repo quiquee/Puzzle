@@ -47,6 +47,10 @@ function init() {
 			img.css("left", -leftOffset + "px");
 			img.css("top", -topOffset + "px");
 			block.append(img);
+			window.setTimeout( function() {
+				game.curNode.shuffle();
+				setPuzzleWithNode(game.curNode);
+			}, 600) ;
 		}
 
 		// Record block at position i
