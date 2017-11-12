@@ -44,7 +44,7 @@ function init() {
 		block.click(blockClickCb);
 
 		if (i != game.size - 1) {  // Escape empty block
-			var img = $("<img class=\"puzzleImg\" src=\"img/light.jpg\"></img>");
+			var img = $("<img class=\"puzzleImg\" src=\"img/k8u1h8_us.png\"></img>");
 			img.css("left", -leftOffset + "px");
 			img.css("top", -topOffset + "px");
 			block.append(img);
