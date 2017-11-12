@@ -5,13 +5,15 @@ var game = {
 	timer: null,
 	imgType: 0,
 	isCheating: false,
-	size: 25,
+	size: 9,
 	attr: new Array(),
 	blocks: new Array(),
 	path: [],
 	pathIndex: 0,
-	desNode: new NPuzzleNode([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0], 5, 5),
-	curNode: new NPuzzleNode([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0], 5, 5)
+	//desNode: new NPuzzleNode([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0], 5, 5),
+	//curNode: new NPuzzleNode([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 0], 5, 5)
+	desNode: new NPuzzleNode([1, 2, 3, 4, 5, 6, 7, 8, 0 ], 3, 3),
+	curNode: new NPuzzleNode([1, 2, 3, 4, 5, 6, 7, 8, 0 ], 3, 3),
 }
 
 /*
@@ -37,7 +39,7 @@ function init() {
 		}
 
 		var block = $("<div class=\"puzzleBlock\"></div>");
-		block.attr("pos", i);  // Extra attribute to record the current block position 
+		block.attr("pos", i);  // Extra attribute to record the current block position
 		block.click(blockClickCb);
 
 		if (i != game.size - 1) {  // Escape empty block
@@ -55,17 +57,17 @@ function init() {
 	// Sync with dom elements
 	setPuzzleWithNode(game.curNode);
 
-	// Initialize buttons 
+	// Initialize buttons
 	$("#switchBtn").click(function() {
 		if (!game.isCheating) {
 			if (game.imgType) {
 				$("body").attr("class", "lightBackground");
 				$("#switchBtn").html("DARK");
-			    changeImg("light.jpg");
+			    changeImg("k8u1h8_us.png");
 			} else {
 				$("body").attr("class", "darkBackground");
 				$("#switchBtn").html("LIGHT");
-			    changeImg("dark.jpg");
+			    changeImg("k8u1h8_us.png");
 		    }
 		    game.imgType = !game.imgType;
 			recover();
@@ -181,7 +183,7 @@ Show the winning message
 function showWinMsg() {
 	$("#mainContainer").attr("class", "blur");
 	window.setTimeout(function() {
-		var winMsg = $("<div class=\"winMsgDiv\"><p>You Win!</p></div>");
+		var winMsg = $("<div class=\"winMsgDiv\"><p>¡Ganaste!</p></div>");
 		winMsg.click(function() {
 			$("#mainContainer").attr("class", "noBlur");
 			$(".winMsgDiv").remove();

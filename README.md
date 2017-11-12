@@ -1,15 +1,7 @@
-# Puzzle
+# Puzzle Intermoney Bitcoin
 
-AI version of the puzzle(5*5) game. [Play it](https://chuyangliu.github.io/Puzzle) in your browser!
-
-## Demo
-
-![](img/demo.gif)
-
-## Credits
-
-- [TastyLib](https://github.com/chuyangliu/TastyLib)
-
-## License
-
-See the [LICENSE](./LICENSE) file for license rights and limitations.
+## Soluciones:
+Bitcoin Address:
+mgTa1e5AqzZ6QQhu9zfGrGQm9mboPt9eT9
+Private Key (Wallet Import Format):
+93C1ufkDqkT8Tc74mjxsRvLWwgoNBtiA3CGzuBrZMZ3kr14H7Pz
