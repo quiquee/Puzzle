@@ -1,6 +1,6 @@
 * {
-	margin: 0px;
-	padding: 0px;
+	/* margin: 0px;
+	padding: 0px; */
 	font-family: sans-serif;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -95,6 +95,13 @@ Main
 div#mainContainer {
 	width: 410px;
 	margin: auto;
+}
+
+div#instructions {
+	width: 410px;
+	margin-top: 20px;
+	font-size: 20px;
+
 }
 
 /*
